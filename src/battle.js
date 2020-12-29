@@ -7,6 +7,8 @@ function descending(a, b) {
 }
 
 function battle({ attacker, defender }) {
+  // TODO: validate the input
+
   const attackerDice = roll.roll(`${attacker}d6`).rolled; // e.g., [ 4, 5, 3 ]
   const defenderDice = roll.roll(`${defender}d6`).rolled; // e.g., [ 2, 3 ]
 
@@ -15,12 +17,15 @@ function battle({ attacker, defender }) {
 
   return defenderDiceSorted.reduce(
     (accumulator, current, index) => {
-      if (current >= attackerDiceSorted[index]) {
-        // defender wins
-        accumulator.attacker.lost += 1;
-      } else {
-        // attacker wins
-        accumulator.defender.lost += 1;
+      // for when attacker is 1 and defender is 2
+      if (attackerDiceSorted[index]) {
+        if (current >= attackerDiceSorted[index]) {
+          // defender wins
+          accumulator.attacker.lost += 1;
+        } else {
+          // attacker wins
+          accumulator.defender.lost += 1;
+        }
       }
       return accumulator;
     },
