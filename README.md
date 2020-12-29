@@ -1,4 +1,4 @@
-# Risk
+# risk-core
 
 Risk: The Game of Strategic Conquest
 

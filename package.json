@@ -1,5 +1,5 @@
 {
-  "name": "Risk",
+  "name": "risk-core",
   "version": "1.0.0",
   "description": "Risk: The Game of Strategic Conquest",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattiaerre/Risk.git"
+    "url": "git+https://github.com/mattiaerre/risk-core.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattiaerre/Risk/issues"
+    "url": "https://github.com/mattiaerre/risk-core/issues"
   },
-  "homepage": "https://github.com/mattiaerre/Risk#readme",
+  "homepage": "https://github.com/mattiaerre/risk-core#readme",
   "devDependencies": {
     "eslint": "^7.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
