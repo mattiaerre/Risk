@@ -14,48 +14,50 @@ describe('battle', () => {
 
   const scenarios = [
     {
-      attacker: 3,
-      defender: 2,
+      attackerDiceNumber: 3,
+      defenderDiceNumber: 2,
       possibleResults: defendingWithTwo
     },
     {
-      attacker: 3,
-      defender: 1,
+      attackerDiceNumber: 3,
+      defenderDiceNumber: 1,
       possibleResults: defendingWithOne
     },
     {
-      attacker: 2,
-      defender: 2,
+      attackerDiceNumber: 2,
+      defenderDiceNumber: 2,
       possibleResults: defendingWithTwo
     },
     {
-      attacker: 2,
-      defender: 1,
+      attackerDiceNumber: 2,
+      defenderDiceNumber: 1,
       possibleResults: defendingWithOne
     },
     {
-      attacker: 1,
-      defender: 2,
+      attackerDiceNumber: 1,
+      defenderDiceNumber: 2,
       possibleResults: defendingWithOne
     },
     {
-      attacker: 1,
-      defender: 1,
+      attackerDiceNumber: 1,
+      defenderDiceNumber: 1,
       possibleResults: defendingWithOne
     }
   ];
 
-  scenarios.forEach(({ attacker, defender, possibleResults }) => {
-    it(`attacker ${attacker}, defender ${defender}`, () => {
-      const result = battle({ attacker, defender });
+  scenarios.forEach(
+    ({ attackerDiceNumber, defenderDiceNumber, possibleResults }) => {
+      it(`attacker dice number ${attackerDiceNumber}, defender dice number ${defenderDiceNumber}`, () => {
+        const result = battle({ attackerDiceNumber, defenderDiceNumber });
 
-      expect(
-        possibleResults
-          .map(JSON.stringify)
-          .includes(
-            JSON.stringify([result.attacker.lost, result.defender.lost])
-          )
-      ).toBe(true);
-    });
-  });
+        expect(
+          possibleResults
+            .map(JSON.stringify)
+            .includes(
+              JSON.stringify([result.attacker.lost, result.defender.lost])
+            )
+        ).toBe(true);
+      });
+    }
+  );
 });

@@ -6,11 +6,11 @@ function descending(a, b) {
   return b - a;
 }
 
-function battle({ attacker, defender }) {
+function battle({ attackerDiceNumber, defenderDiceNumber }) {
   // TODO: validate the input
 
-  const attackerDice = roll.roll(`${attacker}d6`).rolled; // e.g., [ 4, 5, 3 ]
-  const defenderDice = roll.roll(`${defender}d6`).rolled; // e.g., [ 2, 3 ]
+  const attackerDice = roll.roll(`${attackerDiceNumber}d6`).rolled; // e.g., [ 4, 5, 3 ]
+  const defenderDice = roll.roll(`${defenderDiceNumber}d6`).rolled; // e.g., [ 2, 3 ]
 
   const attackerDiceSorted = [...attackerDice].sort(descending); // e.g., [ 5, 4, 3 ]
   const defenderDiceSorted = [...defenderDice].sort(descending); // e.g., [ 3, 2 ]
