@@ -16,3 +16,25 @@ Array [
   "Western Australia",
 ]
 `;
+
+exports[`North America 1`] = `
+Continent {
+  "id": "north-america",
+  "name": "North America",
+  "territories": Array [],
+}
+`;
+
+exports[`North America 2`] = `
+Array [
+  "Alaska",
+  "Alberta (Western Canada)",
+  "Central America",
+  "Eastern United States",
+  "Greenland",
+  "Northwest Territory",
+  "Ontario (Central Canada)",
+  "Quebec (Eastern Canada)",
+  "Western United States",
+]
+`;

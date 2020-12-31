@@ -1,0 +1,52 @@
+[
+  {
+    "borders": ["alberta", "kamchatka", "northwest-territory"],
+    "id": "alaska",
+    "name": "Alaska"
+  },
+  {
+    "borders": [
+      "alaska",
+      "northwest-territory",
+      "ontario",
+      "western-united-states"
+    ],
+    "id": "alberta",
+    "name": "Alberta (Western Canada)"
+  },
+  {
+    "borders": ["eastern-united-states", "venezuela", "western-united-states"],
+    "id": "Central-America",
+    "name": "Central America"
+  },
+  {
+    "borders": [],
+    "id": "eastern-united-states",
+    "name": "Eastern United States"
+  },
+  {
+    "borders": [],
+    "id": "greenland",
+    "name": "Greenland"
+  },
+  {
+    "borders": [],
+    "id": "northwest-territory",
+    "name": "Northwest Territory"
+  },
+  {
+    "borders": [],
+    "id": "ontario",
+    "name": "Ontario (Central Canada)"
+  },
+  {
+    "borders": [],
+    "id": "quebec",
+    "name": "Quebec (Eastern Canada)"
+  },
+  {
+    "borders": ["eastern-united-states"],
+    "id": "western-united-states",
+    "name": "Western United States"
+  }
+]
