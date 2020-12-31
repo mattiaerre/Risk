@@ -1,0 +1,22 @@
+[
+  {
+    "borders": ["new-guinea", "western-australia"],
+    "id": "eastern-australia",
+    "name": "Eastern Australia"
+  },
+  {
+    "borders": ["new-guinea"],
+    "id": "indonesia",
+    "name": "Indonesia"
+  },
+  {
+    "borders": ["eastern-australia", "indonesia", "western-australia"],
+    "id": "new-guinea",
+    "name": "New Guinea"
+  },
+  {
+    "borders": ["new-guinea", "eastern-australia"],
+    "id": "western-australia",
+    "name": "Western Australia"
+  }
+]

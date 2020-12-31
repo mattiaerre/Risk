@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Eastern Australia 1`] = `
+Territory {
+  "borders": Array [],
+  "id": "eastern-australia",
+  "name": "Eastern Australia",
+}
+`;

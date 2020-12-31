@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Australia 1`] = `
+Continent {
+  "id": "australia",
+  "name": "Australia",
+  "territories": Array [],
+}
+`;
+
+exports[`Australia 2`] = `
+Array [
+  "Eastern Australia",
+  "Indonesia",
+  "New Guinea",
+  "Western Australia",
+]
+`;
